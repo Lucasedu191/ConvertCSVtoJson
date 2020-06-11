@@ -1,0 +1,13 @@
+
+
+    ​[18:39] Prof. Martin Jose Fagonde Moraes
+    private void ArquivoCSV(ActionEvent event) {
+        btn_Converter.setDisable(true);
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("C:\\Users\\Usuário\\Downloads\\brasil"));
+        fileChooser.setTitle("Arquivo CSV para conversão");
+        fileCSV = fileChooser.showOpenDialog((Stage) ((Node) event.getSource()).getScene().getWindow());
+        if (fileCSV != null)
+            txtA_Status.appendText("\nARQUIVO DE ORIGEM: " + fileCSV.toString());
+        verificaSeArquivosSelecionados();
+    }
