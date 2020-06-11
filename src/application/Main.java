@@ -32,14 +32,5 @@ public class Main extends Application {
 		launch(args);
 	}
 	
-	 private void LocalizarCSV(ActionEventt event) {
-		 BtConvert.setDisable(true);
-	        FileChooser fileChooser = new FileChooser();
-	        fileChooser.setInitialDirectory(new File("C:\\Users\\Usuário\\Downloads\\brasil"));
-	        fileChooser.setTitle("Arquivo CSV para conversão");
-	        txtcaminho = fileChooser.showOpenDialog((Stage) ((Node) event.getSource()).getScene().getWindow());
-	        if (fileCSV != null)
-	        	txtgravar.appendText("\nARQUIVO DE ORIGEM: " + fileCSV.toString());
-	        verificaSeArquivosSelecionados();
-	    }
+	
 }
